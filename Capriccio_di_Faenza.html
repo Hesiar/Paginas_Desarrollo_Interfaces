@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capriccio di Faenza</title>
+    <style>
+        header {
+            padding: 20px;
+        }
+        .header-contenedor {
+            display: inline; 
+            justify-content: flex-start; 
+            align-items: center; 
+        }
+        header picture {
+            margin-left: 60px;
+            width: 10vw;
+            height: auto;
+        }
+        header h1 {
+            margin: 0; 
+            text-align: center;
+            margin-top: -80px;
+            font-size: 5vw;
+        }
+        table {
+            margin: 0 auto;   
+            max-width: 800px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(250, 250, 169);
+            font-family: 'Roboto', sans-serif;
+        }
+        hr {
+            border: 2px solid;
+            color: #ff0000;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        #opcional {
+            color: red;
+            font-style: italic;
+        }
+        #receta_escrita {
+            text-align: left; 
+            margin: 0 auto;   
+            max-width: 800px; 
+        }
+        #pasos{
+            text-align: center;
+        }
+        .contenedor {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            margin-top: 10px; 
+        }
+        .audiovisual {
+            padding-left: 10%;
+            width: 80%; 
+            max-width: 500px; 
+            height: auto; 
+            margin: 0 auto; 
+            display: block;
+        }
+        .chef {
+            display: block;
+            margin: 0 auto;
+            max-width: 60%;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .food {
+            display: block;
+            margin: 0 auto;
+            max-width: 120%;
+            padding-top: 100px;
+        }
+        aside {
+            width: 30%; 
+            margin-left: 20px;
+            margin-right: 10%;
+            background-color: rgb(250, 250, 169);
+        }
+        h3{
+            text-align: center;
+            padding-right: 80px;
+        }
+        audio{
+            margin-left: 10%;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        #bibliografia{
+            text-align: end;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: rgb(91, 158, 234);
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:visited:hover{
+            color: rgb(91, 158, 234); /*Se me ocurrió concatenarlos y funciona*/
+        }
+        aside h2{
+            text-align: center;
+        }
+        .partes{
+            font-weight: bold;
+        }
+        .imagen_gif{
+            display: flex;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <picture>
+                <source srcset="">
+                <img src="elementos_audiovisuales/Capriccio2.png" alt="capriccio">
+            </picture>
+            <h1>Capriccio di Faenza</h1>
+            <hr>
+        </div>
+    </header>
+    <div id="dificultad_tiempo">
+        <table>
+            <thead>
+                <tr>
+                    <th>DIFICULTAD</th>
+                    <th>INGREDIENTES</th>
+                    <th>TIEMPO</th>
+                    <th>TIEMPO ACTIVO</th>
+                    <th>CANTIDAD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>INTERMEDIA</td>
+                    <td>FÁCIL DISPONIBILIDAD</td>
+                    <td>3 HORAS</td>
+                    <td>2 HORAS Y 45 MINUTOS</td>
+                    <td>5 RACIONES</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedor">
+        <div class="audiovisual">
+            <h3>Vídeo de la receta</h3>
+            <video controls autobuffer width="400px" height="600px">
+                <source src="elementos_audiovisuales/Un plato de pasta que seguro no conoces.mp4">
+            </video>
+            <h3>Audio de la receta</h3>
+            <audio controls autobuffer>
+                <source src="elementos_audiovisuales/audio.mp3">
+            </audio>
+            <div class="imagen_gif">
+                <picture>
+                    <source srcset="">
+                    <img class="food" src="elementos_audiovisuales/Capriccio2.jpg" alt="capriccio">
+                </picture>
+                <img class="chef" src="elementos_audiovisuales/giphy.gif" alt="mammamia">
+            </div>
+        </div>
+        <aside id="ingredientes">
+            <h2>INGREDIENTES</h2>
+            <p>A continuación vamos a separar los ingredientes para cada una de las partes de nuestra receta. <br>
+                En total tenemos 5 partes o secciones en nuestra receta del capriccio de Faenza. <br>
+                Ten en cuenta que los ingredientes que aparezcan en cursiva y color diferente son opcionales.
+            </p>
+            <p class="partes">PASTA FRESCA</p>
+            <ul>
+                <li>150 g de harina de trigo de fuerza (triple 0)</li>
+                <li>150 g de semolina de trigo</li>
+                <li>Pizca de sal</li>
+                <li>4 huevos tamaño L</li>
+            </ul>
+            <p class="partes">RELLENO DE ESPINACAS</p>
+            <ul>
+                <li>250 g de ricotta</li>
+                <li>300 g de brotes de espinacas</li>
+                <li>7 hojas de albahaca fresca</li>
+                <li>1 manojo de perejil</li>
+                <li>Aceite de oliva virgen extra</li>
+                <li>Chorrito de vino blanco</li>
+                <li>50 g de parmesano</li>
+                <li>1 huevo (L)</li>
+                <li>Sal</li>
+                <li>Pimienta negra</li>
+            </ul>
+            <p class="partes">SALSA DE TOMATE</p>
+            <ul>
+                <li>2 dientes de ajo</li>
+                <li>Media cicharadita de peperoncino</li>
+                <li>2 tallos de albahaca</li>
+                <li>Una cucharada de concentrado de tomate</li>
+                <li>Lata de 800 gramos de tomates pelados</li>
+                <li id="opcional">Una corteza de parmesano (opcional)</li>
+                <li>Sal</li>
+                <li id="opcional">Miel (opcional)</li>
+            </ul>
+            <p class="partes">BECHAMEL</p>
+            <ul>
+                <li>50 g de mantequilla sin sal</li>
+                <li>50 g de harina</li>
+                <li>700 ml de leche entera</li>
+                <li>Nuez mosacada al gusto</li>
+                <li>Sal</li>
+                <li>15g de parmesano</li>
+                <li>1 yema (L)</li>
+            </ul>
+            <p class="partes">CAPRICCIO</p>
+            <ul>
+                <li>200g de jamon cocido</li>
+                <li>200g de queso de havarti</li>
+                <li>Queso parmesano</li>
+                <li>Hojas de albahaca para servir</li>
+            </ul>
+        </aside>
+    </div>
+    <div id="receta_escrita">
+        <h2 id="pasos">Pasos para cocinar la receta</h2>
+        <ol>
+            <li>Preparar la masa:</li>
+            <ul>
+                <li>Mezcla 150 g de harina de fuerza, 150 g de semolina y una pizca de sal.</li>
+                <li>Forma un volcán y añade 4 huevos en el centro.</li>
+                <li>Bate los huevos con un tenedor e incorpora la harina poco a poco.</li>
+                <li>Amasa durante 3-4 minutos, envuelve en papel film y deja reposar 30 minutos.</li>
+            </ul>
+            <li>Salsa de tomate:</li>
+            <ul>
+                <li>Sofríe 2 dientes de ajo laminados con aceite, peperoncino y tallos de albahaca a fuego medio.</li>
+                <li>Añade una cucharada de concentrado de tomate y sofríe 10 segundos. Agrega 800 g de tomates pelados <span id="opcional">y una corteza de parmesano</span>.</li>
+                <li>Cocina a fuego medio-alto 10-15 minutos hasta espesar. <span id="opcional">Corrige sal y acidez con miel.</span></li>
+            </ul>
+            <li>Preparar el relleno:</li>
+            <ul>
+                <li>Saltea 300 g de espinacas con albahaca, perejil y vino blanco. Deja escurrir.</li>
+                <li>Mezcla las espinacas con 250 g de ricotta, 50 g de parmesano, 1 huevo, sal y pimienta.</li>
+            </ul>
+            <li>Bechamel:</li>
+            <ul>
+                <li>Derrite mantequilla, añade harina y cocina un minuto.</li>
+                <li>Incorpora leche caliente poco a poco, removiendo. Sazona con sal, nuez moscada, parmesano y una yema.</li>
+            </ul>
+            <li>Montaje:</li>
+            <ul>
+                <li>Estira la masa hasta un círculo grande. Cocina 2 minutos en agua hirviendo con sal y enfría sobre un paño.</li>
+                <li>Extiende el relleno de ricotta y espinacas, cubre con jamón cocido y queso. Enrolla y corta en rodajas.</li>
+            </ul>
+            <li>Hornear:</li>
+            <ul>
+                <li>Coloca las rodajas en una fuente con bechamel en el fondo. Cubre con más bechamel, parmesano rallado y salsa de tomate.</li>
+                <li>Hornea a 180 °C por 20 minutos. Decora con albahaca y parmesano en polvo.</li>
+            </ul>
+        </ol>
+    </div>
+    <hr>
+    <footer>
+        <p>Página elaborada por: Armando Herrero Silva</p>
+        <p id="bibliografia">Receta, audio y video tomados del creador de contenido <a href="https://diegodoal.com/recetas/capriccio">"diegodoal"</a></p>
+    </footer>
+</body>
+</html>
