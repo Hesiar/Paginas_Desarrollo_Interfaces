@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo - Armando News</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Armando News</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video">
+            <h2>Pequeño adelanto de la tercera temporada de Invencible</h2>
+            <video controls preload="auto">
+                <source src="media/video.mp4" type="video/mp4">
+                <source src="media/video.webm" type="video/webm">
+                <track src="media/subtitulos.vtt" srclang="es" label="Español" kind="subtitles" default>
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+    </main>
+    <button id="boton">Mostrar<br>transcripción<br>del vídeo</button>
+    <button id="boton2">Ocultrar<br>transcripción<br>del vídeo</button>
+    <div>
+        <p id="transcripcion">
+            Desde una pasarela Cecil y Donald observan como Invencible entrena levantando una gigantesca máquina.<br><br>
+            <span class="personaje">Donald:</span> En los últimos 90 días, la velocidad de Mark ha aumentado un 65%, su resistencia un 70% y su fuerza, y comprobamos que esto no fuese un error, 138%.<br><br>
+            Varios científicos estan alrededor de Invencible (Mark) tomando notas sobre su progreso mientras este levanta repetidamente la pesada máquina.<br><br>
+            <span class="personaje">Donald:</span> El equipo científico ya está trabajando en una versión más pesada.<br>
+            <span class="personaje">Cecil:</span> Así que la pregunta del billón de dólares es: ¿Podrá ganar a esa mujer viltrumita que nos hizo a todos cagarnos en los pantalones hace tres meses?<br>
+            <span class="personaje">Donald:</span> Creemos que sí, pero ella insinuó que vendría alguien mucho peor.<br>
+            <span class="personaje">Cecil:</span> Por eso no nos detendremos aquí. Ni con Mark ni con cualquiera de nuestros otros planes.<br><br>
+            Por una de las puertas a ras de suelo entra Rex.<br><br>
+            <span class="personaje">Rex:</span> ¡Ostias! Qué manera de hacer sentir inadecuado a un compañero superhéroe. Menos mal que no es el día de las piernas.<br>
+            <span class="personaje">Invencible:</span> Hey, Rex... Sí, Cecil me tiene en un plan de entrenamiento.<br>
+            <span class="personaje">Rex:</span> Sí, ya lo veo...
+        </p>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#boton").click(function(){
+                $('#boton').css('display', 'none');
+                $('#boton2').css('display', 'block');
+                $('#transcripcion').css('display', 'block');
+            });
+            $("#boton2").click(function(){
+                $('#boton2').css('display', 'none');
+                $('#boton').css('display', 'block');
+                $('#transcripcion').css('display', 'none');
+            });
+        });
+    </script>
+    <footer id="contacto">
+        <p>Contacto: <a href="mailto:info@Armando_News.com">info@Armando_News.com</a></p>
+        <p>&copy; 2025 Armando News - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
